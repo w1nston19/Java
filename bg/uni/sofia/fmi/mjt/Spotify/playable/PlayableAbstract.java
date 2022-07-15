@@ -1,6 +1,6 @@
 package bg.uni.sofia.fmi.mjt.Spotify.playable;
 
-public abstract class PlayableAbstract implements Playable{
+public abstract class PlayableAbstract implements Playable {
 
     protected String title, artist;
     protected int year;
@@ -8,7 +8,7 @@ public abstract class PlayableAbstract implements Playable{
 
     private int plays;
 
-    protected PlayableAbstract(String title, String artist, int year, double duration){
+    protected PlayableAbstract(String title, String artist, int year, double duration) {
         this.title = title;
         this.artist = artist;
         this.year = year;

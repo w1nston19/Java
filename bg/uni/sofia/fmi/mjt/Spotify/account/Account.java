@@ -5,18 +5,19 @@ import bg.uni.sofia.fmi.mjt.Spotify.library.Library;
 import bg.uni.sofia.fmi.mjt.Spotify.library.UserLibrary;
 import bg.uni.sofia.fmi.mjt.Spotify.playable.Playable;
 
-public  abstract class Account {
+public abstract class Account {
     String email;
     protected Library library;
     double totalListenTime;
     int plays;
 
-    public Account(String email){
+    public Account(String email) {
         this.email = email;
         this.library = new UserLibrary();
         totalListenTime = 0.0;
         plays = 0;
     }
+
     /**
      * Returns the number of ads listened to.
      * - Free accounts get one ad after every 5 pieces of content played
@@ -56,10 +57,10 @@ public  abstract class Account {
     }
 
     public double getRevenue() {
-        if(this.getType() == AccountType.PREMIUM){
+        if (this.getType() == AccountType.PREMIUM) {
             return 25.0;
         } else {
-            return this.getAdsListenedTo()*0.10;
+            return this.getAdsListenedTo() * 0.10;
         }
     }
 

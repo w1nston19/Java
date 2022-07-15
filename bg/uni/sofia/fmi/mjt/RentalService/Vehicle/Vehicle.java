@@ -1,20 +1,23 @@
 package bg.uni.sofia.fmi.mjt.RentalService.Vehicle;
+
 import java.time.LocalDateTime;
+
 import bg.uni.sofia.fmi.mjt.RentalService.Location.Location;
+
 public interface Vehicle {
 
     /**
      * @return the price per minute for booking this vehicle.
-     *         Prices for the different types are:
-     *             "CAR" -> 0.50
-     *             "SCOOTER" -> 0.30
-     *             "BICYCLE" -> 0.20
+     * Prices for the different types are:
+     * "CAR" -> 0.50
+     * "SCOOTER" -> 0.30
+     * "BICYCLE" -> 0.20
      */
     double getPricePerMinute();
 
     /**
      * @return the type of this vehicle. Valid types are: "CAR", "SCOOTER" or
-     *         "BICYCLE"
+     * "BICYCLE"
      */
     String getType();
 
@@ -30,12 +33,11 @@ public interface Vehicle {
 
     /**
      * @return the end of the reservation period, in case the vehicle is currently
-     *         booked, otherwise return current time
+     * booked, otherwise return current time
      */
     LocalDateTime getEndOfReservationPeriod();
 
     /**
-     *
      * @param until time until the vehicle is booked
      */
     void setEndOfReservationPeriod(LocalDateTime until);

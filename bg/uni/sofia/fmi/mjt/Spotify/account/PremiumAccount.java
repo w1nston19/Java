@@ -1,6 +1,6 @@
 package bg.uni.sofia.fmi.mjt.Spotify.account;
 
-public class PremiumAccount extends Account{
+public class PremiumAccount extends Account {
 
     final double PREMIUM_FEE = 25.0;
 

@@ -1,6 +1,6 @@
 package bg.uni.sofia.fmi.mjt.Spotify.playable;
 
-public class Audio extends PlayableAbstract implements Playable{
+public class Audio extends PlayableAbstract implements Playable {
 
     protected Audio(String title, String artist, int year, double duration) {
         super(title, artist, year, duration);

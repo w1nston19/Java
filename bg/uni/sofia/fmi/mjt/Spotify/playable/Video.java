@@ -1,6 +1,6 @@
 package bg.uni.sofia.fmi.mjt.Spotify.playable;
 
-public class Video extends PlayableAbstract implements Playable{
+public class Video extends PlayableAbstract implements Playable {
     protected Video(String title, String artist, int year, double duration) {
         super(title, artist, year, duration);
     }

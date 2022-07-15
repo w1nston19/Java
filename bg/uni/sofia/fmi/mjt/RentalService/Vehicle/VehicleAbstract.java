@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.Objects;
 
-public abstract class VehicleAbstract implements Vehicle{
+public abstract class VehicleAbstract implements Vehicle {
     String id;
     Location location;
     LocalDateTime endTime = null;
@@ -36,13 +36,13 @@ public abstract class VehicleAbstract implements Vehicle{
         return (endTime == null || endTime.isAfter(LocalDateTime.now()));
     }
 
-    public double book(LocalDateTime until){
-        if(isBooked()){
+    public double book(LocalDateTime until) {
+        if (isBooked()) {
             return -1.0;
         }
         endTime = until;
         Duration period = Duration.between(LocalDateTime.now(), until);
-        return period.toMinutes()*this.getPricePerMinute();
+        return period.toMinutes() * this.getPricePerMinute();
     }
 
     @Override

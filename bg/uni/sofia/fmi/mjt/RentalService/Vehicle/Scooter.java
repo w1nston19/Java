@@ -1,6 +1,6 @@
 package bg.uni.sofia.fmi.mjt.RentalService.Vehicle;
 
-public class Scooter extends VehicleAbstract implements Vehicle{
+public class Scooter extends VehicleAbstract implements Vehicle {
     @Override
     public double getPricePerMinute() {
         return 0.3;

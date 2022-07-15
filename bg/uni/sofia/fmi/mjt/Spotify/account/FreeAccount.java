@@ -1,13 +1,13 @@
 package bg.uni.sofia.fmi.mjt.Spotify.account;
 
-public class FreeAccount extends Account{
+public class FreeAccount extends Account {
     public FreeAccount(String email) {
         super(email);
     }
 
     @Override
     public int getAdsListenedTo() {
-        return plays/5;
+        return plays / 5;
     }
 
     @Override
