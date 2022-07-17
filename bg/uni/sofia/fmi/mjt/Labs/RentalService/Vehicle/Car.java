@@ -2,9 +2,11 @@ package bg.uni.sofia.fmi.mjt.Labs.RentalService.Vehicle;
 
 public class Car extends VehicleAbstract implements Vehicle {
 
+    private final double pricePerMinute = 0.5;
+
     @Override
     public double getPricePerMinute() {
-        return 0.50;
+        return pricePerMinute;
     }
 
     @Override

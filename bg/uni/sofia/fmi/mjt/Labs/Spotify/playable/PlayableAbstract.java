@@ -2,7 +2,8 @@ package bg.uni.sofia.fmi.mjt.Labs.Spotify.playable;
 
 public abstract class PlayableAbstract implements Playable {
 
-    protected String title, artist;
+    protected String title;
+    protected String artist;
     protected int year;
     protected double duration;
 

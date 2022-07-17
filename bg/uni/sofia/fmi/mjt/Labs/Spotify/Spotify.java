@@ -30,7 +30,8 @@ public class Spotify implements StreamingService {
     }
 
     @Override
-    public void like(Account account, String title) throws AccountNotFoundException, PlayableNotFoundException, StreamingServiceException {
+    public void like(Account account, String title) throws AccountNotFoundException,
+                                                           PlayableNotFoundException, StreamingServiceException {
         validateNotNull(account);
         validateNotNull(title);
         validateNotEmpty(title);
@@ -59,9 +60,9 @@ public class Spotify implements StreamingService {
 
     public Account findAccount(Account account) throws AccountNotFoundException {
         validateNotNull(account);
-        for (Account _account : accounts) {
-            if (_account == account) {
-                return _account;
+        for (Account accountTmp : accounts) {
+            if (accountTmp == account) {
+                return accountTmp;
             }
         }
         throw new AccountNotFoundException("Account not found");

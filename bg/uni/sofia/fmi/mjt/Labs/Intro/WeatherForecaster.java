@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class WeatherForecaster {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(getsWarmerIn(new int[]{3, 4, 5, 1, -1, 2, 6, 3})));
+        /*System.out.println(Arrays.toString(getsWarmerIn(new int[]{3, 4, 5, 1, -1, 2, 6, 3})));
         System.out.println(Arrays.toString(getsWarmerIn(new int[]{3, 4, 5, 6})));
-        System.out.println(Arrays.toString(getsWarmerIn(new int[]{3, 6, 9})));
+        System.out.println(Arrays.toString(getsWarmerIn(new int[]{3, 6, 9})));*/
     }
 
     private static int[] getsWarmerIn(int[] ints) {

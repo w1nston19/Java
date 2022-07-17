@@ -6,10 +6,14 @@ import bg.uni.sofia.fmi.mjt.Labs.Spotify.library.UserLibrary;
 import bg.uni.sofia.fmi.mjt.Labs.Spotify.playable.Playable;
 
 public abstract class Account {
+    private final double PROFIT_PER_AD = 0.1;
+    private final double PREMIUM_PROFIT = 25;
     String email;
     protected Library library;
     double totalListenTime;
     int plays;
+
+
 
     public Account(String email) {
         this.email = email;
@@ -58,9 +62,9 @@ public abstract class Account {
 
     public double getRevenue() {
         if (this.getType() == AccountType.PREMIUM) {
-            return 25.0;
+            return PREMIUM_PROFIT;
         } else {
-            return this.getAdsListenedTo() * 0.10;
+            return this.getAdsListenedTo() * PROFIT_PER_AD;
         }
     }
 

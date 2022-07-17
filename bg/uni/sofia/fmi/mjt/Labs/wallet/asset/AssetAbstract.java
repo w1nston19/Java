@@ -1,7 +1,8 @@
 package bg.uni.sofia.fmi.mjt.Labs.wallet.asset;
 
 public abstract class AssetAbstract implements Asset {
-    protected String id, name;
+    protected String id;
+    protected String name;
     protected AssetType type;
 
     public AssetAbstract(String id, String name, AssetType type) {

@@ -1,6 +1,6 @@
-# Labs 
-## Weekly tasks for MJT-FMI course
+# Labs
 
+## Weekly tasks for MJT-FMI course
 
 |      Theme         |        Lab        | Status |
 |      -------       |        ---        |  ---   |
