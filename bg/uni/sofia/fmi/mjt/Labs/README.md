@@ -6,4 +6,4 @@
 |      -------       |        ---        |  ---   |
 | 02.[OOP I]()           | [Rental Service](./RentalService)    | Ready  |
 | 03.[OOP II]()          | [Spotify](./Spotify)           | Ready  |
-| 04.[Data Structures]() | [Investment Wallet](./wallet) | Almost |
+| 04.[Data Structures]() | [Investment Wallet](./wallet) | Ready |
