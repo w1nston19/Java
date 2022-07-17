@@ -1,6 +1,7 @@
 package bg.uni.sofia.fmi.mjt.Labs.wallet.acquisition;
 
 import bg.uni.sofia.fmi.mjt.Labs.wallet.asset.Asset;
+import bg.uni.sofia.fmi.mjt.Labs.wallet.quote.Quote;
 import bg.uni.sofia.fmi.mjt.Labs.wallet.quote.QuoteManager;
 
 import java.time.LocalDateTime;
@@ -11,14 +12,14 @@ public class AcquisitionManager implements Acquisition {
     private double price;
     private int quantity;
 
-    QuoteManager manager;
+    Quote quote;
 
-    public AcquisitionManager(Asset asset, int quantity, QuoteManager manager) {
+    public AcquisitionManager(Asset asset, int quantity, Quote quote) {
         this.asset = asset;
         this.quantity = quantity;
-        this.manager = manager;
+        this.quote = quote;
         this.timestamp = LocalDateTime.now();
-        this.price = manager.getQuote(this.asset).askPrice();
+        this.price = this.quote.askPrice();
     }
 
     @Override
