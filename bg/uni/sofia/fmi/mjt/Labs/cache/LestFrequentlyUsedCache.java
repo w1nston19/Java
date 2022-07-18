@@ -1,6 +1,6 @@
 package bg.uni.sofia.fmi.mjt.Labs.cache;
 
-public class LestFrequentlyUsedCache<K,V> extends CacheAbstract<K,V> implements Cache<K,V>{
+public class LestFrequentlyUsedCache<K, V> extends CacheAbstract<K, V> implements Cache<K, V> {
     public LestFrequentlyUsedCache(long capacity) {
         super(capacity);
     }
@@ -10,8 +10,8 @@ public class LestFrequentlyUsedCache<K,V> extends CacheAbstract<K,V> implements 
         int use = 1;
         K rmKey = null;
 
-        for(K key : this.uses.keySet()){
-            if(rmKey == null || uses.get(key) < use){
+        for (K key : this.uses.keySet()) {
+            if (rmKey == null || uses.get(key) < use) {
                 use = uses.get(key);
                 rmKey = key;
             }

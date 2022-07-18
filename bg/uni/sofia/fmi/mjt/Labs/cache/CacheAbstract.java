@@ -3,14 +3,14 @@ package bg.uni.sofia.fmi.mjt.Labs.cache;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class CacheAbstract<K,V> implements Cache<K,V>{
+public abstract class CacheAbstract<K, V> implements Cache<K, V> {
     long capacity;
     long currentItems;
 
     int totalHits;
     int successfulHits;
-    Map<K,V> map;
-    Map<K,Integer> uses;
+    Map<K, V> map;
+    Map<K, Integer> uses;
 
     public CacheAbstract(long capacity) {
         this.capacity = capacity;
@@ -20,16 +20,18 @@ public abstract class CacheAbstract<K,V> implements Cache<K,V>{
         this.map = new HashMap<>();
         this.uses = new HashMap<>();
     }
-    private void validateNotNull(Object o){
-        if(o == null){
+
+    private void validateNotNull(Object o) {
+        if (o == null) {
             throw new IllegalArgumentException();
         }
     }
+
     @Override
     public V get(K key) {
         validateNotNull(key);
         V result = map.get(key);
-        if(result != null){
+        if (result != null) {
             successfulHits++;
             uses.put(key, uses.get(key) + 1);
         }
@@ -45,17 +47,17 @@ public abstract class CacheAbstract<K,V> implements Cache<K,V>{
         validateNotNull(key);
         validateNotNull(value);
 
-        if(this.currentItems >= capacity && map.get(key) == null){
+        if (this.currentItems >= capacity && map.get(key) == null) {
             removeFromCache();
         }
 
-        if(map.get(key) == null){
-                map.put(key, value);
-                uses.put(key,0);
-                this.currentItems++;
+        if (map.get(key) == null) {
+            map.put(key, value);
+            uses.put(key, 0);
+            this.currentItems++;
 
         } else {
-            this.map.put(key,value);
+            this.map.put(key, value);
             uses.put(key, uses.get(key) + 1);
         }
     }
@@ -63,7 +65,7 @@ public abstract class CacheAbstract<K,V> implements Cache<K,V>{
 
     @Override
     public boolean remove(K key) {
-        if(this.map.get(key) != null){
+        if (this.map.get(key) != null) {
             this.map.remove(key);
             return true;
         }
@@ -87,7 +89,7 @@ public abstract class CacheAbstract<K,V> implements Cache<K,V>{
 
     @Override
     public double getHitRate() {
-        return totalHits != 0 ? (double) successfulHits/totalHits : 0.0;
+        return totalHits != 0 ? (double) successfulHits / totalHits : 0.0;
     }
 
     @Override
