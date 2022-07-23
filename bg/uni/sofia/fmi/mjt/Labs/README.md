@@ -9,4 +9,7 @@
 | 03.[OOP II]()          | [Spotify](./Spotify)           | 
 | 04.[Data Structures]() | [Investment Wallet](./wallet) |
 | 05.[Generics]() | [Cache](./cache) | Ready |
+| 06.[Unit Testing]() | [Tests](/../../Tests) | Ready |
+| 07.[Streams]() | [logger](./logger) | Ready |
+
 
