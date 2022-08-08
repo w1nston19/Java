@@ -13,7 +13,7 @@
 | 07.[IOStreams]()                                                                | [logger](./logger)                   | 
 | 08.[Lambdas and Stream API]()                                                   | [gameRecommender](./gameRecommender) | 
 | 09.[Multithreading]()                                                           | [racing track](./RacingTrack)        |
-| 10.[Network]()                                                                  | [racing track](./cocktails)          |
+| 10.[Network]()                                                                  | [cocktails](./cocktails)          |
 
 
 
