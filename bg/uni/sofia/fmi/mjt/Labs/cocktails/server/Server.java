@@ -34,6 +34,8 @@ public class Server {
 
     public void startServer() {
         try (ServerSocketChannel serverSocketChannel = ServerSocketChannel.open()) {
+            System.out.println("Server connected");
+
             selector = Selector.open();
 
             serverSocketChannel.bind(new InetSocketAddress(HOST, port));
