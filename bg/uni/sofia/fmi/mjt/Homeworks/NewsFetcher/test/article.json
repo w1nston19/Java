@@ -1,0 +1,13 @@
+{
+  "source": {
+    "id": "customID",
+    "name": "customNews"
+  },
+  "author": "customAuthor",
+  "title": "customTitle",
+  "description": "customDescription",
+  "url": "unusedUrl",
+  "urlToImage": "unused",
+  "publishedAt": "customDate",
+  "content": "customContent"
+}
