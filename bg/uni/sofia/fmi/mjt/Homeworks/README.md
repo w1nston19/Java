@@ -4,7 +4,7 @@
 
 | Theme                                                                           |
 |---------------------------------------------------------------------------------|
-| 02.[BoardGamesRecommender](./GamesRecommender) |
+| 02.[BoardGamesRecommender](./GameRecommender) |
 | 03.[NewsFeed](./NewsFetcher)                                                                    | 
 
 
