@@ -4,8 +4,8 @@
 
 | Theme                                                                           |
 |---------------------------------------------------------------------------------|
-| 02.[BoardGamesRecommender](./BoardGamesRecommender) |
-| 03.[NewsFeed](./NewsFeed)                                                                    | 
+| 02.[BoardGamesRecommender](./GamesRecommender) |
+| 03.[NewsFeed](./NewsFetcher)                                                                    | 
 
 
 
